@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <script src ="./EaS.js" defer></script>
+    <link rel="stylesheet" href="./EaStyles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class = "mainContainer">
+        <div class="heading" style="display: flex; justify-content: center;">
+            <h1>Etch-A-Sketch</h1>
+        </div>
+        <div class = "body">
+            <div class="optionsDiv">
+                Menu
+                <ol>
+                    <li>Select a range</li>
+                    <li>Select a color</li>
+                    <li>Start Drawing</li>
+                </ol>
+                <div class = "rangeDiv">
+                    Select Range<input type="range" min="1" max="100" class="slider", list="markers" value="40">
+                    <p class="range">Select range</p>
+                    <datalist id="markers">
+                        <option value="10"></option>
+                        <option value="25"></option>
+                        <option value="30"></option>
+                        <option value="35"></option>
+                        <option value="40"></option>
+                        <option value="40"></option>
+                        <option value="55"></option>
+                        <option value="65"></option>
+                    </datalist>
+                </div>
+                <div class= "buttonsDiv">
+                    Choose a color<input type="color" id = "colorpicker" name="Color Picker"/>
+                    <button class="RainbowButton">Rainbow Mode</button>
+                    <button class="clearButton">Clear</button>
+                </div>   
+            </div>
+            <div class="parentDiv"></div>
+        </div>
+        <div class="footerDiv">
+            <p>Made by: <a href="https://github.com/AJAHN1999">
+                <i class="fab fa-github fa-xl fa-spin"></i>
+            </a>Ajahn Tundla</p>
+        
+        </div>   
+</body>
+</html>

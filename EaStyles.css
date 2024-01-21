@@ -1,0 +1,90 @@
+body{
+    background-color: rgb(129, 0, 235)
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.optionsDiv{
+    border-color: rgb(231, 227, 0);
+    border-style: solid;
+    margin: 5px;
+}
+
+
+h1{
+    text-shadow: 2px 2px #3700ff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+}
+.parentDiv{
+    display: flex;  
+    border-color: black;
+    height: 600px;
+    width:600px;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 10px 5px 5px rgb(202, 114, 114);
+    
+}
+
+ .childDiv{
+    /* height: 50px;
+    width:50px; */
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: none;
+} 
+
+.childDiv:hover{
+    cursor: crosshair;
+}
+
+
+.optionsDiv,.rangeDiv,.buttonsDiv{
+    padding: 5px;
+    display: flex;
+    justify-content:end;
+    align-items:center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px #500979;
+    color: #eeff00;
+
+}
+
+.colorMode,.RainbowButton,.earserButton,.clearButton{
+    margin: 5px;
+    border-radius: 16px;
+    background-color: yellow;
+    width: 90px;
+    height: 60px;
+    box-shadow: 10px 5px 5px rgb(202, 114, 114);
+}
+.footerDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.slider{
+    
+    /* appearance: none; */
+    background: transparent; 
+    border-radius: 30px; 
+    padding: 2px;
+    border-color: #eeff00;
+}
+
+.range{
+    color:black;
+}
+
+
+
